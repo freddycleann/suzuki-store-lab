@@ -1,0 +1,549 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-13T18:33:36Z",
+    "timestamp_areas_base": "2026-09-13T07:08:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 725987477,
+  "lat": 16.4389562,
+  "lon": 102.8308484,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "name": "ซูซูกิ",
+    "name:en": "Suzuki",
+    "name:th": "ซูซูกิ",
+    "shop": "motorcycle",
+    "source": "GPS; sign"
+  }
+},
+{
+  "type": "node",
+  "id": 1052912441,
+  "lat": 14.8643081,
+  "lon": 100.0773945,
+  "tags": {
+    "brand": "Suzuki",
+    "name": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 1245209595,
+  "lat": 17.9847118,
+  "lon": 100.0558459,
+  "tags": {
+    "name": "Den Chai Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 1463845944,
+  "lat": 12.9241542,
+  "lon": 100.8792362,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki;Kawasaki",
+    "motorcycle:repair": "yes",
+    "motorcycle:sales": "yes",
+    "motorcycle:type": "scooter",
+    "name": "Mityon Pattaya",
+    "shop": "motorcycle",
+    "website": "http://www.mityon.co.th/"
+  }
+},
+{
+  "type": "node",
+  "id": 1563463730,
+  "lat": 12.9337705,
+  "lon": 100.8945700,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki;Kawasaki;Benelli;Vespa;SYM",
+    "name": "Mityon Pattaya",
+    "opening_hours": "08:00-20:00",
+    "phone": "+66 38 410846",
+    "shop": "motorcycle",
+    "website": "http://www.mityon.co.th/"
+  }
+},
+{
+  "type": "node",
+  "id": 1563487424,
+  "lat": 12.9236427,
+  "lon": 100.8827209,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki;Kawasaki;Benelli;Givi;Real",
+    "motorcycle:repair": "yes",
+    "motorcycle:sales": "yes",
+    "motorcycle:type": "scooter",
+    "name": "Mityon Pattaya",
+    "shop": "motorcycle",
+    "website": "http://www.mityon.co.th/"
+  }
+},
+{
+  "type": "node",
+  "id": 1635308390,
+  "lat": 12.9270364,
+  "lon": 100.8995414,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki;Kawasaki;",
+    "motorcycle:sales": "yes",
+    "motorcycle:type": "scooter",
+    "name": "Mityon Pattaya",
+    "shop": "motorcycle",
+    "website": "http://www.mityon.co.th/"
+  }
+},
+{
+  "type": "node",
+  "id": 2085794557,
+  "lat": 12.9084762,
+  "lon": 100.8864492,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki",
+    "motorcycle:sales": "yes",
+    "motorcycle:type": "scooter",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2411652515,
+  "lat": 14.8979076,
+  "lon": 100.3975524,
+  "tags": {
+    "brand": "Suzuki;Honda;Keeway;Big Bull",
+    "motorcycle:clothes": "no",
+    "motorcycle:parts": "yes",
+    "motorcycle:rental": "no",
+    "motorcycle:repair": "yes",
+    "motorcycle:sales": "yes",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2446658828,
+  "lat": 12.3919909,
+  "lon": 99.9165938,
+  "tags": {
+    "brand": "Honda;Yamaha;Suzuki;Kymco;Lifan;Keeway",
+    "motorcycle:clothes": "no",
+    "motorcycle:parts": "yes",
+    "motorcycle:rental": "no",
+    "motorcycle:repair": "yes",
+    "motorcycle:sales": "yes",
+    "name": "สหยานยนต์",
+    "name:en": "Sahayanyont",
+    "name:th": "สหยานยนต์",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2547394481,
+  "lat": 19.1682732,
+  "lon": 99.9016227,
+  "tags": {
+    "brand": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2587898210,
+  "lat": 11.5028313,
+  "lon": 99.6086720,
+  "tags": {
+    "brand": "independent",
+    "name": "Suzuki Mc Repairs",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2676453146,
+  "lat": 18.5649272,
+  "lon": 100.7527538,
+  "tags": {
+    "name": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2795687238,
+  "lat": 20.0578445,
+  "lon": 99.3605505,
+  "tags": {
+    "name": "Honda & Suzuki Shop",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3094089164,
+  "lat": 19.1077125,
+  "lon": 98.8297913,
+  "tags": {
+    "brand": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3316434937,
+  "lat": 6.6702281,
+  "lon": 100.3242580,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "brand:wikipedia": "en:Suzuki",
+    "name": "Suzuki",
+    "name:en": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3438396993,
+  "lat": 18.2954764,
+  "lon": 98.8157540,
+  "tags": {
+    "brand": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3532729255,
+  "lat": 18.7715577,
+  "lon": 100.7724456,
+  "tags": {
+    "brand": "Honda;Kawazaki;Suzuki;Yamaha;Harley-Davidson",
+    "name": "Den's Motorcycle Shop/Repair",
+    "opening_hours": "08:30-16:30",
+    "phone": "+66 84 1446311",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3617018800,
+  "lat": 7.0164882,
+  "lon": 100.4767571,
+  "tags": {
+    "name": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3643625616,
+  "lat": 16.0623736,
+  "lon": 103.6513497,
+  "tags": {
+    "brand": "Suzuki",
+    "name": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3954051746,
+  "lat": 13.7041961,
+  "lon": 100.5449256,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "name": "Suzuki Big Bike",
+    "shop": "motorcycle",
+    "website": "https://www.thaisuzuki.co.th/bigbike/"
+  }
+},
+{
+  "type": "node",
+  "id": 4326453790,
+  "lat": 12.9275503,
+  "lon": 100.8868410,
+  "tags": {
+    "addr:street": "เฉลิมพระเกียรติ",
+    "brand": "Suzuki;Kawasaki;KTM;Benelli;Bimola;Index;Real",
+    "motorcycle:sales": "yes",
+    "name": "Super Bike Pattaya",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4342418290,
+  "lat": 13.8268894,
+  "lon": 100.5910231,
+  "tags": {
+    "addr:housenumber": "87",
+    "addr:postcode": "10230",
+    "addr:street": "Lat Phrao Wanghin Rd.",
+    "brand": "Honda;Yamaha;Suzuki;Piaggio;Kawasaki;Ducati;Harley-Davidson;Triumph;Benelli;KTM",
+    "email": "emmamotorbikes@gmail.com",
+    "motorcycle:rental": "yes",
+    "motorcycle:sales": "no",
+    "name": "Emma Motorbikes",
+    "opening_hours": "Mo-Su 11:00-19:00",
+    "phone": "+668 783 76708",
+    "shop": "motorcycle",
+    "website": "http://www.emmamotorbikes.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4419748992,
+  "lat": 18.9181149,
+  "lon": 98.9751936,
+  "tags": {
+    "brand": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5545246703,
+  "lat": 15.1884414,
+  "lon": 104.8679787,
+  "tags": {
+    "brand": "Honda;Suzuki",
+    "shop": "motorcycle",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6172537433,
+  "lat": 16.4314404,
+  "lon": 103.5052501,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "brand:wikipedia": "en:Suzuki",
+    "name": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 6295260985,
+  "lat": 8.0243832,
+  "lon": 98.3335400,
+  "tags": {
+    "name:en": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 6770211962,
+  "lat": 12.9240972,
+  "lon": 100.8980995,
+  "tags": {
+    "addr:street": "ถนนสุขุมวิท",
+    "brand": "Honda;Yamaha;Suzuki",
+    "motorcycle:sales": "yes;used",
+    "operator": "บริษัท จำกัด มหาชน พัทยามอเตอร์",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 6950684869,
+  "lat": 15.2338436,
+  "lon": 104.8700226,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "name": "Suzuki",
+    "second_hand": "no",
+    "shop": "motorcycle",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9399258696,
+  "lat": 6.8836562,
+  "lon": 99.7854661,
+  "tags": {
+    "brand": "Suzuki",
+    "name": "เซาเทอร์นซูซูกิ",
+    "not:brand:wikidata": "Q181642",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 12435318010,
+  "lat": 13.9180033,
+  "lon": 100.6887461,
+  "tags": {
+    "addr:district": "อำเภอ ลำลูกกา",
+    "addr:housenumber": "54/33",
+    "addr:postcode": "12150",
+    "addr:province": "ปทุมธานี",
+    "addr:street": "หทัยราษฎร์ 2",
+    "addr:subdistrict": "ลาดสวาย",
+    "brand": "Honda;Yamaha;Suzuki;",
+    "contact:line": "+66 80 2924224",
+    "contact:mobile": "+66 80 2924224",
+    "name": "ซ่อมมอเตอร์ไซค์ by ช่างเอ(หนองใหญ่)",
+    "opening_hours": "07:00-19:00",
+    "payment:cash": "yes",
+    "service:vehicle:batteries": "yes",
+    "service:vehicle:brakes": "yes",
+    "service:vehicle:diagnostics": "yes",
+    "service:vehicle:electrical": "yes",
+    "service:vehicle:inspection": "yes",
+    "service:vehicle:oil_change": "yes",
+    "service:vehicle:tyres": "yes",
+    "shop": "motorcycle_repair",
+    "source": "survey",
+    "source:date": "2024-12-20"
+  }
+},
+{
+  "type": "node",
+  "id": 13519655028,
+  "lat": 17.3081280,
+  "lon": 99.8314918,
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "name": "รุ่งโรจน์ 1993",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "way",
+  "id": 392138161,
+  "center": {
+    "lat": 13.9973126,
+    "lon": 100.6723676
+  },
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "building": "yes",
+    "name": "Suzuki Big Bike",
+    "shop": "motorcycle",
+    "website": "https://www.thaisuzuki.co.th/bigbike/"
+  }
+},
+{
+  "type": "way",
+  "id": 392140088,
+  "center": {
+    "lat": 7.8759412,
+    "lon": 98.3896361
+  },
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "building": "yes",
+    "name": "Suzuki Big Bike",
+    "shop": "motorcycle",
+    "website": "https://www.thaisuzuki.co.th/bigbike/"
+  }
+},
+{
+  "type": "way",
+  "id": 666015788,
+  "center": {
+    "lat": 18.8196084,
+    "lon": 98.9814086
+  },
+  "tags": {
+    "brand": "Suzuki",
+    "building": "yes",
+    "name": "Suzuki Big Bike",
+    "name:alt": "Sahapanich",
+    "shop": "motorcycle",
+    "source": "DigitalGlobe-Standard",
+    "website": "https://www.sahapanich.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 709377438,
+  "center": {
+    "lat": 12.6880219,
+    "lon": 101.2748342
+  },
+  "tags": {
+    "brand": "ซูซูกิ",
+    "building": "yes",
+    "name": "ซูซูกิ",
+    "name:en": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "way",
+  "id": 952716197,
+  "center": {
+    "lat": 13.6213745,
+    "lon": 100.6413755
+  },
+  "tags": {
+    "brand": "Suzuki",
+    "building": "yes",
+    "name": "Suzuki Big Bike East Bangkok",
+    "operator": "Suzuki",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "way",
+  "id": 965100641,
+  "center": {
+    "lat": 17.1017139,
+    "lon": 100.1661486
+  },
+  "tags": {
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "brand:wikipedia": "en:Suzuki",
+    "building:part": "yes",
+    "name": "หจก. ไพศาลการยนต์หนองตม",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "way",
+  "id": 1241964624,
+  "center": {
+    "lat": 16.1152900,
+    "lon": 99.3293047
+  },
+  "tags": {
+    "addr:city": "คลองลาน",
+    "addr:district": "Khlong Lan",
+    "addr:postcode": "62180",
+    "addr:province": "Kamphaeng Phet",
+    "addr:subdistrict": "Khlong Lan Phatthana",
+    "brand": "Suzuki",
+    "brand:wikidata": "Q181642",
+    "building": "yes",
+    "name": "สยาม เอ็ม จี มอเตอร์",
+    "opening_hours": "Mo-Sa 08:00-17:00",
+    "phone": "+66 944045163",
+    "shop": "motorcycle"
+  }
+}
+
+  ]
+}
