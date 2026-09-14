@@ -75,6 +75,11 @@ lib/
 
 ## Troubleshooting
 
+- **Google sign-in on Android says "didn't finish" or "SHA-1 fingerprint isn't registered":**
+  Google Play services answers with `[16] Account reauth failed` and Firebase with
+  `INVALID_CERT_HASH` until the debug SHA-1 above is added to the Android app `suzuki.store` in
+  Firebase → Project settings. After adding it, wait a few minutes and try again — no rebuild needed.
+
 - **Map shows "Live update unavailable":** the public OpenStreetMap Overpass servers are often
   busy. The app then uses the bundled snapshot; tap Retry later.
 - **"Near me" on the emulator:** set a location in the emulator's Extended controls → Location.

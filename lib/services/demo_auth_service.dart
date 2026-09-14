@@ -29,6 +29,9 @@ class DemoAuthService implements AuthService {
       throw const AuthFailure('Google sign-in is available once Firebase is connected.');
 
   @override
+  Future<void> signInWithGoogleInBrowser() => signInWithGoogle();
+
+  @override
   AppUser? get currentUser => _current;
 
   @override

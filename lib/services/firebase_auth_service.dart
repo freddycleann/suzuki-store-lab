@@ -46,7 +46,7 @@ class FirebaseAuthService implements AuthService {
       await _initGoogle();
       account = await GoogleSignIn.instance.authenticate();
     } on GoogleSignInException catch (e) {
-      if (e.code == GoogleSignInExceptionCode.canceled) throw const AuthCancelled();
+      if (e.code == GoogleSignInExceptionCode.canceled) throw const GoogleSignInIncomplete();
       throw AuthFailure(_googleMessage(e));
     }
 
@@ -77,6 +77,23 @@ class FirebaseAuthService implements AuthService {
       }
     }
     await _auth.signOut();
+  }
+
+  @override
+  Future<void> signInWithGoogleInBrowser() async {
+    if (kIsWeb) return _signInWithGooglePopup();
+    try {
+      // Firebase's hosted Google sign-in page in a browser tab; independent of
+      // the Play services account picker.
+      final result = await _auth.signInWithProvider(GoogleAuthProvider());
+      final user = result.user;
+      if (user != null && (result.additionalUserInfo?.isNewUser ?? false)) {
+        _saveProfile(user, user.displayName ?? '', user.email ?? '');
+      }
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'web-context-canceled' || e.code == 'canceled') throw const AuthCancelled();
+      throw AuthFailure(_message(e));
+    }
   }
 
   /// Browsers use Firebase's Google popup instead of the Android account picker.
@@ -141,6 +158,12 @@ class FirebaseAuthService implements AuthService {
     }
   }
 
+  /// Firebase rejects Google sign-in from an Android build whose signing
+  /// certificate is not listed on the app in Project settings.
+  static const _certNotRegistered =
+      "Google sign-in is blocked because this app's SHA-1 fingerprint isn't registered in Firebase. "
+      "Add C0:70:DD:A4:03:B5:8E:90:0F:86:46:80:71:8E:48:AB:76:46:1D:26 to the Android app suzuki.store.";
+
   static const _authNotSetUp =
       'Firebase Authentication is not set up yet. Open Authentication in the Firebase console and click Get started.';
 
@@ -157,6 +180,8 @@ class FirebaseAuthService implements AuthService {
         'popup-blocked' => 'Allow pop-ups for this site to sign in with Google.',
         'unauthorized-domain' => 'This web address is not an authorized domain in Firebase Authentication settings.',
         'operation-not-allowed' => 'This sign-in method is not enabled in the Firebase console.',
+        'invalid-cert-hash' => _certNotRegistered,
+        _ when '${e.message}'.contains('INVALID_CERT_HASH') => _certNotRegistered,
         'configuration-not-found' => _authNotSetUp,
         'internal-error' when (e.message ?? '').contains('CONFIGURATION_NOT_FOUND') => _authNotSetUp,
         _ => e.message ?? 'Authentication failed (${e.code}).',

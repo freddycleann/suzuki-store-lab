@@ -11,6 +11,29 @@ Future<void> continueWithGoogle(BuildContext context) async {
   try {
     await auth.signInWithGoogle();
     navigator.popUntil((route) => route.isFirst);
+  } on GoogleSignInIncomplete {
+    if (!context.mounted) return;
+    showAppSnack(
+      context,
+      "Google sign-in didn't finish. You can sign in with Google in the browser instead.",
+      error: true,
+      duration: const Duration(seconds: 8),
+      actionLabel: 'USE BROWSER',
+      onAction: () => _signInInBrowser(context, auth, navigator),
+    );
+  } on AuthCancelled {
+    return;
+  } on AuthFailure catch (e) {
+    if (context.mounted) showAppSnack(context, e.message, error: true);
+  } catch (e) {
+    if (context.mounted) showAppSnack(context, 'Google sign-in failed: $e', error: true);
+  }
+}
+
+Future<void> _signInInBrowser(BuildContext context, AuthService auth, NavigatorState navigator) async {
+  try {
+    await auth.signInWithGoogleInBrowser();
+    navigator.popUntil((route) => route.isFirst);
   } on AuthCancelled {
     return;
   } on AuthFailure catch (e) {

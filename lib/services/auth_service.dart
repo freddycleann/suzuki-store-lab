@@ -26,6 +26,13 @@ class AuthCancelled implements Exception {
   const AuthCancelled();
 }
 
+/// The Android Google account picker closed without a token. Play services
+/// reports both a user cancel and an app signature that is not registered in
+/// Firebase ("[16] Account reauth failed") this way, so offer the browser flow.
+class GoogleSignInIncomplete implements Exception {
+  const GoogleSignInIncomplete();
+}
+
 abstract class AuthService {
   bool get isDemo;
 
@@ -39,8 +46,13 @@ abstract class AuthService {
 
   Future<void> register({required String name, required String email, required String password});
 
-  /// Throws [AuthCancelled] if the user closes the Google account picker.
+  /// Native Google sign-in. Throws [GoogleSignInIncomplete] on Android when the
+  /// account picker closes without a token.
   Future<void> signInWithGoogle();
+
+  /// Google sign-in through Firebase's hosted web flow (browser tab or popup).
+  /// Throws [AuthCancelled] if the user closes it.
+  Future<void> signInWithGoogleInBrowser();
 
   Future<void> sendPasswordReset(String email);
 

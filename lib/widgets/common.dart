@@ -13,11 +13,13 @@ void showAppSnack(
   bool error = false,
   String? actionLabel,
   VoidCallback? onAction,
+  Duration duration = const Duration(seconds: 4),
 }) {
   ScaffoldMessenger.of(context)
     ..hideCurrentSnackBar()
     ..showSnackBar(
       SnackBar(
+        duration: duration,
         content: Row(
           children: [
             Icon(
